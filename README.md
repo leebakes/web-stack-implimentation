@@ -79,4 +79,19 @@ Next, you will be asked if you want to continue connecting. Type Yes and press E
 To verify that you are connected, you should see your IP address on the top-right of the screen. Nice job! You have successfully connected to your Linux server in the Cloud environment.
 ![](./Images/project1image11.png)
 
+## APACHE
+
+### Installing Apache on the virtual environment
+
+What is Apache? Apache is a widely-used fast, reliable, and secure web server software. A web server acts as a middleman between the website visitor browser and the server.
+
+Now we will install Apache using Ubuntu’s package manager: ‘apt’ Begin by using the $ sudo apt update command to check for any available updates.
+
+Next, run the following command to run the Apache package installation:
+
+$ sudo apt install apache2
+
+Terminal will generate a series of code. Once completed, you will see something like this:
+
+
 
