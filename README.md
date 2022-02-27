@@ -38,3 +38,10 @@ Now we are going to configure our EC2 instance! Select the Ubuntu Server 20.04 L
 Then, select "t2.micro" as the instance type. Once you have made the selection, click "Review and Launch".
 
 ![](./Images/project1image5.png)
+
+When you reach the "Review and Launch" page, click the "Launch" at the bottom-right of the page.
+
+![](./Images/project1image6.png)
+
+Next, you should see a window appear. Create a key pair and then select "Download". Don't lose it! You will need this file in order to connect into your server from your local PC. After you downloaded the key pair, check the box for the acknowledgement, and then click on "Launch Instances".
+
