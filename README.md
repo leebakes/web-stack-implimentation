@@ -45,3 +45,6 @@ When you reach the "Review and Launch" page, click the "Launch" at the bottom-ri
 
 Next, you should see a window appear. Create a key pair and then select "Download". Don't lose it! You will need this file in order to connect into your server from your local PC. After you downloaded the key pair, check the box for the acknowledgement, and then click on "Launch Instances".
 
+![](./Images/project1image7.png)
+
+Great job! You've launched an EC2 instance! You can view your new instance by clicking the "View Instances" button at the bottom-right of your screen. Note: it may take a moment to initialize, so please be patient!
