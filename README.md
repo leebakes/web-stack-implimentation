@@ -62,6 +62,7 @@ Begin by opening Terminal. Once you have opened Terminal, use the cd command to 
 Once you have located the key pair, use the command below to activate the key file (.pem). This command will also change permissions (otherwise you may get the error “Bad Permissions”):
 
 $ sudo chmod 0400 <private-key-name>.pem
+
 When prompted, type the password for your local PC and press Enter on your keyboard.
 
 Next, go back to the AWS console for a moment, and navigate to your running EC2 instance. Copy the Public IP address, as shown in the image below:
