@@ -68,3 +68,9 @@ Next, go back to the AWS console for a moment, and navigate to your running EC2 
 
 ![](./Images/project1image9.png)
 
+Now that you've copied the Public IP address, go back to Terminal. Connect to the EC2 instance by using the command below:
+
+$ ssh -i <private-key-name>.pem ubuntu@<Public-IP-address>
+
+Next, you will be asked if you want to continue connecting. Type Yes and press Enter on your keyboard.
+
