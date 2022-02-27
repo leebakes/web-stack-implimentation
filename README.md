@@ -75,3 +75,8 @@ $ ssh -i <private-key-name>.pem ubuntu@<Public-IP-address>
 
 Next, you will be asked if you want to continue connecting. Type Yes and press Enter on your keyboard.
 
+![](./Images/project1image10.png)
+To verify that you are connected, you should see your IP address on the top-right of the screen. Nice job! You have successfully connected to your Linux server in the Cloud environment.
+![](./Images/project1image11.png)
+
+
