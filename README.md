@@ -23,3 +23,7 @@ Begin by registering and setting up an [AWS account](https://console.aws.amazon.
 Once you have signed-in to your AWS account, navigate to the top-right of the screen and select your preferred region (this should be the closest region to your physical location).
 
 ![](./Images/project1image2.png)
+
+After you have selected your region, navigate to the search bar and type in EC2. Select the EC2 service that appears.
+
+![](./Images/project1image3.png)
