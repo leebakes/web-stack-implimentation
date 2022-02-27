@@ -51,3 +51,5 @@ Great job! You've launched an EC2 instance! You can view your new instance by cl
 
 ![](./Images/project1image8.png)
 
+## Connecting to your EC2 from your local PC
+
