@@ -206,6 +206,32 @@ We can simultaneously install all three of these packages. Begin by running the 
 
 $ sudo apt install php libapache2-mod-php php-mysql
 
+![](./Images/project1image28.png)
+
+Congrats! The LAMP stack is now completely installed and fully operational.
+
+## Creating a Virtual Host Using Apache
+
+Next, we will create a virtual host using Apache. A virtual host allows us to have multiple websites located on a single machine! This will be used to test our setup.
+
+Begin by creating the directory for projectlamp using the following command:
+
+$ sudo mkdir /var/www/projectlamp
+Next, assign ownership of the directory using the following command:
+
+$ sudo chown -R $USER:$USER /var/www/projectlamp
+Next, we must create and open a new configuration file using vi, which is a text editor. Use the command below to open a blank file:
+
+$ sudo vi /etc/apache2/sites-available/projectlamp.conf
+Next, paste in the following configuration by pressing on i on the keyboard to engage the 'insert' mode, then paste the text below:
+
+<VirtualHost *:80> ServerName projectlamp ServerAlias www.projectlamp ServerAdmin webmaster@localhost DocumentRoot /var/www/projectlamp ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined </VirtualHost>
+
+Once you have entered the text, press esc, type :wq, then press "Enter" on your keyboard to write (save) and exit the vi editor.
+
+![](./Images/2022-03-07_21-29.png)
+
+
 
 
 
