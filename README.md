@@ -169,8 +169,6 @@ MEDIUM --- Length >= 8, numeric, mixed case, and special characters
 
 STRONG --- Length >= 8, numeric, mixed case, special characters and dictionary file
 
-![](./Images/project1image21.png)
-
 Once you are satisfied with your password, enter it then type Y for “Yes” when asked if you want to continue with the password provided.
 
 For the rest of the questions, type Y for "Yes" and press "Enter" on your keyboard at each prompt.
@@ -180,4 +178,33 @@ These security measures will remove anonymous users and the test database, disab
 Your Terminal should look something like this:
 
 ![](./Images/project1image23.png)
+
+Next, you can check whether you can log in to the MySQL console by typing the following command. This command allows you to connect to the MySQL server as the administrative user (root user), which is implied by the use of 'sudo' part of the command:
+
+$ sudo mysql
+
+This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. You should see the following output:
+
+![](./Images/project1image24.png)
+
+To exit the MySQL console, type the following:
+
+mysql> exit
+
+![](./Images/project1image25.png)
+
+## PHP
+### Installing PHP on the virtual environment
+
+Congrats on making it this far! We have reached the final component of the LAMP web stack; PHP is general-purpose scripting language which process code so that it can display dynamic content to the end user.
+
+In addition to installing PHP, we must install php-mysql, which is a PHP module that allows PHP to communicate with MySQL-based databases. We must also install libapache2-mod-php to allow Apache to handle PHP files.
+
+We can simultaneously install all three of these packages. Begin by running the following command on Terminal:
+
+$ sudo apt install php libapache2-mod-php php-mysql
+
+
+
+
 
