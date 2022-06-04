@@ -95,3 +95,12 @@ Terminal will generate a series of code. Once completed, you will see something 
 
 ![](./Images/project1image12.png)
 
+Once completed, use the following command to verify that Apache2 is running as a service in our OS:
+
+$ sudo systemctl status apache2
+
+If there is a green dot, then that means it's running! Nice work!
+
+![](./Images/project1image13.png)
+
+###Modifying The Firewall
