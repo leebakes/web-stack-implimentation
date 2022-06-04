@@ -179,4 +179,5 @@ These security measures will remove anonymous users and the test database, disab
 
 Your Terminal should look something like this:
 
-![](./Images/project1image22.png)
+![](./Images/project1image23.png)
+
