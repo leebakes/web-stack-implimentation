@@ -130,5 +130,17 @@ You should see something like this:
 
 ![](./Images/project1image18.png)
 
+Next, let's try to verify access through the web browser using the public IP address of the EC2 instance. Open a web browser of your choice and then enter the following url (remember to replace contents within the Anchor Tabs < >):
 
+<http://<Public-IP-Address>:80>
 
+You should see the following web page. This is the Apache2 Ubuntu Default page:
+
+![](./Images/project1image19.png)
+
+## MySQL
+### Installing MySQL on the virtual environment
+
+Congratulations on setting up and running your Apache web server. Next, we will install MySQL, which is an open-source relational database management system. This will allow us to store and manage data for the website.
+
+Begin by using the following command to install MySQL:
