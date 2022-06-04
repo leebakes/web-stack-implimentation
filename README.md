@@ -298,6 +298,7 @@ Congratulations! You did it! We have completed our LAMP Web Stack Implementation
 Don't forget to terminate your EC2 instance and it's associated components on the AWS Console. Also, be sure to remove the file you created as it contains sensitive information using the following command:
 
 $ sudo rm /var/www/projectlamp/index.php
+
 Credit: This guide was inspired by @SkillEmbassy
 
 
