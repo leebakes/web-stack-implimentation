@@ -132,7 +132,7 @@ You should see something like this:
 
 Next, let's try to verify access through the web browser using the public IP address of the EC2 instance. Open a web browser of your choice and then enter the following url (remember to replace contents within the Anchor Tabs < >):
 
-<http://<Public-IP-Address>:80>
+http: // <Public-IP-Address>:80
 
 You should see the following web page. This is the Apache2 Ubuntu Default page:
 
@@ -144,3 +144,29 @@ You should see the following web page. This is the Apache2 Ubuntu Default page:
 Congratulations on setting up and running your Apache web server. Next, we will install MySQL, which is an open-source relational database management system. This will allow us to store and manage data for the website.
 
 Begin by using the following command to install MySQL:
+
+$ sudo apt install mysql-server
+
+When prompted, confirm that you want to proceed with the installation by typing Y for "Yes", and then press "Enter" on your Keyboard.
+
+![](./Images/project1image20.png)
+
+Once the installation is complete, it is best practice to run a security script in order to add more security access to your database system. Use the following command:
+
+$ sudo mysql_secure_installation
+
+You will be asked to validate password component. Type Y for "Yes".
+
+Next, you must choose the level of your password validation. There are three levels of password validation policy:
+
+Please choose either 0 = LOW, 1 = MEDIUM or 2 = STRONG
+
+Please Note:
+
+LOW --- Length >= 8
+
+MEDIUM --- Length >= 8, numeric, mixed case, and special characters
+
+STRONG --- Length >= 8, numeric, mixed case, special characters and dictionary file
+
+![](./Images/project1image21.png)
