@@ -229,7 +229,76 @@ Next, paste in the following configuration by pressing on i on the keyboard to e
 
 Once you have entered the text, press esc, type :wq, then press "Enter" on your keyboard to write (save) and exit the vi editor.
 
+![](./Images/project1image29.png)
+
+Next, we will use a series of commands.
+
+To show the new file in the sites-available directory, use the following command. With this Virtua lHost configuration, we are telling Apache to serve projectlamp using /var/www/projectlampl as its web root directory.
+
+$ sudo ls /etc/apache2/sites-available
+Next, use the a2ensite command to enable the new virtual host:
+
+$ sudo a2ensite projectlamp
+You may want to disable the default website that comes installed with Apache. This is necessary if you are not using a custom domain name, because in this case Apache’s default configuration would overwrite your virtual host.
+
+To disable Apache’s default website use the following command:
+
+$ sudo a2dissite 000-default
+To make sure your configuration file doesn’t contain syntax errors, run:
+
+$ sudo apache2ctl configtest
+Finally, reload Apache so these changes take effect:
+
+$ sudo systemctl reload apache2
+Here is what you can expect to see on your Terminal:
+
 ![](./Images/project1image30.png)
+
+Although our website is now active, the web root /var/www/projectlamp is still empty. Let's create an index.html file in that location so that we will be able to test that the virtual host works properly. Use the command below:
+
+sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+Now let's test that the website is correctly displaying our content by opening the EC2 Public IP address in your web browser. http://<Public-IP-Address>:80 .
+
+It should look something like this:
+
+![](./Images/project1image31.png)
+
+## Enable PHP on the website
+
+Lastly, we must modify the directory index settings, such that the index.html no longer takes precedence over an index.php file. We can achieve this behavior by editing the /etc/apache2/mods-enabled/dir.conf file and then changing the order in which the index.php file is listed within the DirectoryIndex directive. Use the following command:
+
+sudo vim /etc/apache2/mods-enabled/dir.conf
+In the vi editor, modify the default text to the following:
+
+DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm :
+
+![](./Images/project1image32.png)
+
+Next, after saving and closing the file, you must reload Apache so the changes take effect. Use the following command:
+
+$ sudo systemctl reload apache2
+Finally, we will create a PHP script. This will test whether or not PHP is correctly installed and configured on the server. Use the following command to create a new file named index.php inside your custom web root folder:
+
+$ vim /var/www/projectlamp/index.php
+This will open a blank file. Add the following text inside of the file:
+
+<?php
+phpinfo();
+
+![](./Images/project1image33.png)
+
+Once you have completed this step, save and close the file.
+
+Refresh the page on your browser, and you will see a page similar to this:
+
+![](./Images/project1image34.png)
+
+Congratulations! You did it! We have completed our LAMP Web Stack Implementation.
+
+Don't forget to terminate your EC2 instance and it's associated components on the AWS Console. Also, be sure to remove the file you created as it contains sensitive information using the following command:
+
+$ sudo rm /var/www/projectlamp/index.php
+Credit: This guide was inspired by @SkillEmbassy
 
 
 
