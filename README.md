@@ -282,8 +282,8 @@ Finally, we will create a PHP script. This will test whether or not PHP is corre
 $ vim /var/www/projectlamp/index.php
 This will open a blank file. Add the following text inside of the file:
 
-<?php
-phpinfo();
+< ? php
+php info ();
 
 ![](./Images/project1image33.png)
 
