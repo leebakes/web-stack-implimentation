@@ -169,6 +169,8 @@ MEDIUM --- Length >= 8, numeric, mixed case, and special characters
 
 STRONG --- Length >= 8, numeric, mixed case, special characters and dictionary file
 
+![](./Images/project1image24.png)
+
 Once you are satisfied with your password, enter it then type Y for “Yes” when asked if you want to continue with the password provided.
 
 For the rest of the questions, type Y for "Yes" and press "Enter" on your keyboard at each prompt.
@@ -177,7 +179,7 @@ These security measures will remove anonymous users and the test database, disab
 
 Your Terminal should look something like this:
 
-![](./Images/project1image23.png)
+![](./Images/project1image25.png)
 
 Next, you can check whether you can log in to the MySQL console by typing the following command. This command allows you to connect to the MySQL server as the administrative user (root user), which is implied by the use of 'sudo' part of the command:
 
@@ -185,13 +187,13 @@ $ sudo mysql
 
 This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. You should see the following output:
 
-![](./Images/project1image24.png)
+![](./Images/project1image26.png)
 
 To exit the MySQL console, type the following:
 
 mysql> exit
 
-![](./Images/project1image25.png)
+![](./Images/project1image27.png)
 
 ## PHP
 ### Installing PHP on the virtual environment
