@@ -229,7 +229,7 @@ Next, paste in the following configuration by pressing on i on the keyboard to e
 
 Once you have entered the text, press esc, type :wq, then press "Enter" on your keyboard to write (save) and exit the vi editor.
 
-![](./Images/project1image29.png)
+![](./Images/project1image30.png)
 
 
 
